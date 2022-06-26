@@ -17,6 +17,7 @@ object RegresionLineal {
     val schema = new StructType()
       .add("Number",LongType,true)
       .add("ID",LongType,true)
+      .add("Case Number",StringType,true)
       .add("Date",StringType,true)
       .add("Block",StringType,true)
       .add("IUCR",IntegerType,true)
