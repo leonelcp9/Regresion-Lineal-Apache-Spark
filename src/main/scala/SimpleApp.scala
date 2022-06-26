@@ -1,10 +1,8 @@
-import com.sun.jdi.{IntegerType, LongType}
 import org.apache.spark.SparkContext
 import org.apache.spark.SparkContext._
 import org.apache.spark.SparkConf
 import org.apache.spark.sql.SparkSession
-import org.apache.spark.sql.types.DataType
-import org.apache.spark.sql.types.DataType._
+import org.apache.spark.sql.types._
 
 object RegresionLineal {
   def main(args: Array[String]) {
@@ -20,8 +18,28 @@ object RegresionLineal {
       .add("Number",LongType,true)
       .add("ID",LongType,true)
       .add("Date",StringType,true)
-      .add("Block",,true)
-    val df = spark.read.csv(path)
+      .add("Block",StringType,true)
+      .add("IUCR",IntegerType,true)
+      .add("Primary Type",StringType,true)
+      .add("Description",StringType,true)
+      .add("Location Description",StringType,true)
+      .add("Arrest",BooleanType,true)
+      .add("Domestic",BooleanType,true)
+      .add("Beat",IntegerType,true)
+      .add("District",DoubleType,true)
+      .add("Ward",DoubleType,true)
+      .add("Community Area",FloatType,true)
+      .add("FBI Code",IntegerType,true)
+      .add("X Coordinate",DoubleType,true)
+      .add("Y Coordinate",DoubleType,true)
+      .add("Year",IntegerType,true)
+      .add("Updated On",StringType,true)
+      .add("Latitude",DoubleType,true)
+      .add("Longitude",DoubleType,true)
+      .add("Location",StringType,true)
+
+    val df = spark.read.format("csv").option("header","true").schema(schema).load(path)
+    df.printSchema()
     df.show()
   }
 }
