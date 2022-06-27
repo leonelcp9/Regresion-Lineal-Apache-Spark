@@ -3,9 +3,6 @@ import org.apache.spark.SparkContext._
 import org.apache.spark.SparkConf
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.types._
-import org.apache.spark.ml.regression.LinearRegression
-import org.apache.spark.ml.feature.VectorAssembler
-import org.apache.spark.ml.evaluation.RegressionEvaluator
 
 
 object RegresionLineal {
@@ -49,7 +46,7 @@ object RegresionLineal {
 
 
     val featureCols= Array("Number","ID","Case Number","Date Block","IUCR","Primary Type","Description","Location Description","Arrest","Domestic","Beat","District","Ward","Community Area","FBI Code","X Coordinate","Y Coordinate","Year","Updated On","Latitude","Longitude","Location")
-
+/*
     val assembler = new VectorAssembler().setInputCols(featureCols).setOutputCol("features")
 
     val dataDF = assembler.transform(df)
@@ -81,6 +78,6 @@ object RegresionLineal {
     predictions.show()
     val eval = new RegressionEvaluator().setMetricName("rmse").setLabelCol("label").setPredictionCol("prediction")
     val rmse = eval.evaluate(predictions)
-
+*/
   }
 }
