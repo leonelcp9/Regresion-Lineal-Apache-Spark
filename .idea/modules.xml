@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/regresion-lineal-apache-spark_3589.iml" filepath="$PROJECT_DIR$/.idea/modules/regresion-lineal-apache-spark_3589.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/regresion-lineal-apache-spark_3589-build.iml" filepath="$PROJECT_DIR$/.idea/modules/regresion-lineal-apache-spark_3589-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Regresion Lineal Apache Spark.iml" filepath="$PROJECT_DIR$/.idea/modules/Regresion Lineal Apache Spark.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Regresion Lineal Apache Spark-build.iml" filepath="$PROJECT_DIR$/.idea/modules/Regresion Lineal Apache Spark-build.iml" />
     </modules>
   </component>
 </project>
