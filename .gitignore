@@ -1,6 +1,7 @@
 
 Chicago_Crimes_2012_to_2017.csv
-.metals/metals.lock.db
-.metals/metals.log
-.metals/metals.mv.db
-.vscode/settings.json
+.metals/
+.vscode/
+target/
+.idea/
+project/

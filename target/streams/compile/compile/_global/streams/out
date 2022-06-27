@@ -1,4 +1,10 @@
-[0m[[0m[31merror[0m] [0m[0m/home/will-pc/GitHub Proyects/Regresion-Lineal-Apache-Spark/src/main/scala/SimpleApp.scala:49:20: constructor Vector in class Vector cannot be accessed in object RegresionLineal[0m
-[0m[[0m[31merror[0m] [0m[0m    val assembler= new Vector[0m
-[0m[[0m[31merror[0m] [0m[0m                   ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/leonel/Documents/GitHub/Regresion-Lineal-Apache-Spark/src/main/scala/SimpleApp.scala:58:30: not found: value dataDF1[0m
+[0m[[0m[31merror[0m] [0m[0m    val Array(train, test) = dataDF1.randomSplit(Array(0.8, 0.2))[0m
+[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/leonel/Documents/GitHub/Regresion-Lineal-Apache-Spark/src/main/scala/SimpleApp.scala:58:15: recursive value x$1 needs type[0m
+[0m[[0m[31merror[0m] [0m[0m    val Array(train, test) = dataDF1.randomSplit(Array(0.8, 0.2))[0m
+[0m[[0m[31merror[0m] [0m[0m              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/leonel/Documents/GitHub/Regresion-Lineal-Apache-Spark/src/main/scala/SimpleApp.scala:59:34: too many arguments (2) for method println: (x: Any)Unit[0m
+[0m[[0m[31merror[0m] [0m[0m    println(train.count, rawData.count)[0m
+[0m[[0m[31merror[0m] [0m[0m                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
