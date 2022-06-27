@@ -34,7 +34,7 @@ object RegresionLineal {
       .add("District",DoubleType,true)
       .add("Ward",DoubleType,true)
       .add("Community Area",FloatType,true)
-      .add("FBI Code",StringType,true)
+      .add("FBI Code",IntegerType,true)
       .add("X Coordinate",DoubleType,true)
       .add("Y Coordinate",DoubleType,true)
       .add("Year",IntegerType,true)
